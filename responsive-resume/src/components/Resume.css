@@ -49,18 +49,18 @@ body {
 
 .header {
     display: flex;
-    justify-content: space-between; /* แบ่งพื้นที่ระหว่าง name และ contact */
-    align-items: flex-start; /* จัดตำแหน่งให้ทั้งสองอยู่ในแนวบน */
+    justify-content: space-between; 
+    align-items: flex-start;
 }
 /* Name Column */
 .name {
-    flex: 1; /* กำหนดให้ส่วนนี้ใช้พื้นที่ 1 เท่า */
+    flex: 1; 
 }
 
 /* Contact Column */
 .contact {
-    flex: 0.7; /* กำหนดให้ส่วนนี้ใช้พื้นที่ 1 เท่า */
-    text-align: left; /* ทำให้ข้อความใน contact ชิดขวา */
+    flex: 0.7;
+    text-align: left;
 }
 
 h1 {
@@ -112,21 +112,20 @@ p, ul, li {
 .skills li {
     margin-bottom: 10px;
 }
-/* เส้นระหว่าง Education และ Experience */
 .education {
-    border-bottom: 2px solid #ccc; /* เส้นบางๆ สีเทา */
-    padding-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
-    margin-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 20px; 
+    margin-bottom: 20px; 
 }
 
-/* เส้นระหว่าง Experience และ Skills */
+
 .experience {
-    border-bottom: 2px solid #ccc; /* เส้นบางๆ สีเทา */
-    padding-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
-    margin-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
+    border-bottom: 2px solid #ccc; 
+    padding-bottom: 20px; 
+    margin-bottom: 20px; 
 }
 
-/* Responsive Design for Tablets */
+
 @media (max-width: 768px) {
     .container {
         flex-direction: column;
@@ -139,7 +138,7 @@ p, ul, li {
     }
 }
 
-/* Responsive Design for Small Screens */
+
 @media (max-width: 576px) {
     body {
         font-size: 14px;
