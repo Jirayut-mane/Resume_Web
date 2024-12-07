@@ -1,6 +1,6 @@
 import React from 'react';
-import './Resume.css'; // นำเข้าไฟล์สไตล์
-import GGEWImage from './img/GGEW.jpg'; // นำเข้ารูปภาพ
+import './Resume.css'; 
+import GGEWImage from './img/GGEW.jpg'; 
 
 const Resume = () => {
     return (
@@ -8,7 +8,6 @@ const Resume = () => {
             {/* Left Column */}
             <div className="left-column">
                 <div className="row profile-img">
-                    {/* ใช้รูปภาพที่นำเข้า */}
                     <img src={GGEWImage} alt="Profile of Jirayut" className="circle-img" />
                 </div>
                 <div className="row about-me">
