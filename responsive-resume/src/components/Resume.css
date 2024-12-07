@@ -1,0 +1,173 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1200px;
+    margin: 40px auto;
+    justify-content: space-between;
+    padding: 0 50px;
+}
+
+/* Left Column */
+.left-column {
+    width: 40%;
+    background-color: #323b4c;
+    color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+}
+
+/* Right Column */
+.right-column {
+    width: 60%;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Row Styles */
+.row {
+    margin-bottom: 20px;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between; /* แบ่งพื้นที่ระหว่าง name และ contact */
+    align-items: flex-start; /* จัดตำแหน่งให้ทั้งสองอยู่ในแนวบน */
+}
+/* Name Column */
+.name {
+    flex: 1; /* กำหนดให้ส่วนนี้ใช้พื้นที่ 1 เท่า */
+}
+
+/* Contact Column */
+.contact {
+    flex: 0.7; /* กำหนดให้ส่วนนี้ใช้พื้นที่ 1 เท่า */
+    text-align: left; /* ทำให้ข้อความใน contact ชิดขวา */
+}
+
+h1 {
+    font-size: 3rem;
+    margin-bottom: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 15px;
+    text-align: left;
+    color: inherit;
+}
+
+p, ul, li {
+    color: inherit;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+/* Image Styles */
+.profile-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.circle-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #fff;
+}
+
+/* Skills */
+.skills {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.skills ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills li {
+    margin-bottom: 10px;
+}
+/* เส้นระหว่าง Education และ Experience */
+.education {
+    border-bottom: 2px solid #ccc; /* เส้นบางๆ สีเทา */
+    padding-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
+    margin-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
+}
+
+/* เส้นระหว่าง Experience และ Skills */
+.experience {
+    border-bottom: 2px solid #ccc; /* เส้นบางๆ สีเทา */
+    padding-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
+    margin-bottom: 20px; /* เว้นระยะห่างจากข้อความด้านล่าง */
+}
+
+/* Responsive Design for Tablets */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .left-column, .right-column {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+/* Responsive Design for Small Screens */
+@media (max-width: 576px) {
+    body {
+        font-size: 14px;
+    }
+
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    .circle-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 10px;
+    }
+
+    .left-column, .right-column {
+        padding: 20px;
+    }
+}
